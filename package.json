@@ -1,0 +1,14 @@
+{
+  "name": "Answer to the Question of Who I am ?",
+  "version": "1.0.0",
+  "description": "I am The Guy Who Pounded Your Mothers Tuna ",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass sass/main.scss css/styles.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.43.4"
+  }
+}
