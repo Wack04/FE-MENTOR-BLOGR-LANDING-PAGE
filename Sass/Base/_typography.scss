@@ -1,0 +1,80 @@
+//Fonts
+
+//font-family: 'Overpass', sans-serif; weight: 300 600;
+//font-family: 'Ubuntu', sans-serif; weight: 400 500 700;
+
+//Imports
+@use "../Abstracts/variables" as Variable;
+
+//Styles
+body {
+  font-size: 1.6rem;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style-type: none;
+}
+.h1,
+.h2 {
+  display: inline-block;
+}
+.para {
+  display: inline-block;
+}
+.h1,
+.h2 {
+  width: 88%;
+}
+.h1--primary,
+.h2--primary {
+  color: var(--very-dark-blue);
+}
+.h1--white {
+  color: var(--white);
+}
+.para {
+  width: 86%;
+}
+
+.h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  margin-bottom: 2.6rem;
+}
+
+.para {
+  font-family: "Overpass", sans-serif;
+  font-weight: 300;
+  margin: 0 auto;
+  &:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+}
+.para--primary {
+  color: var(--very-dark-black-blue);
+}
+.para--white {
+  color: var(--white);
+}
+
+.footer__list__link {
+  font-family: "ubuntu", sans-serif;
+  font-weight: 400;
+}
+
+.footer__list {
+  font-family: "Overpass", sans-serif;
+  font-weight: 300;
+}

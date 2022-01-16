@@ -1,0 +1,33 @@
+@use "../abstracts/variables" as *;
+
+//Links ( 'A'-Tags )
+.btn,
+.btn:visited,
+.btn:link {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 1.4rem;
+  font-family: "ubuntu", sans-serif;
+  font-weight: 500;
+  border-radius: 2rem;
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
+  padding: 1rem 1.4rem;
+  outline: 0;
+  margin: 0 auto;
+  &:not(.btn--outline) {
+    border: 0;
+  }
+}
+.btn--outline {
+  border: 1.2px solid var(--white);
+  color: var(--white);
+}
+.btn--fill {
+  background: var(--white);
+  color: var(--light-red);
+}
+.btn--gradient {
+  background: linear-gradient(left to right, var(--gradient-orange-red));
+  color: var(--white);
+}

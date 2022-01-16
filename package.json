@@ -1,14 +1,15 @@
 {
-  "name": "Answer to the Question of Who I am ?",
+  "name": "Blogr",
   "version": "1.0.0",
-  "description": "I am The Guy Who Pounded Your Mothers Tuna ",
+  "description": "Design preview for the Blogr landing page coding challenge",
   "main": "index.js",
   "scripts": {
-    "sass": "sass sass/main.scss css/styles.css --watch"
+    "compile-sass": "sass Sass/main.scss css/styles.css -w"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "devDependencies": {  
     "sass": "^1.43.4"
   }
 }

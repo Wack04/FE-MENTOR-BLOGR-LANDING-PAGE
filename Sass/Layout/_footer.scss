@@ -1,0 +1,26 @@
+@use "../Abstracts/mixins" as *;
+
+.footer {
+  background: var(--very-dark-black-blue);
+  padding: 3rem 2rem;
+  text-align: center;
+  &__logo {
+    margin-bottom: 3rem;
+  }
+  &__list {
+    color: var(--white);
+    margin-bottom: 2rem;
+  }
+  &__list__container {
+    @include breakpoint(large) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__list__link {
+    color: var(--grayish-blue);
+    &:last-child {
+      margin-bottom: 2rem;
+    }
+  }
+}

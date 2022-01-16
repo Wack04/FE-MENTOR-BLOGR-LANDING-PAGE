@@ -1,0 +1,33 @@
+@use "../Abstracts/mixins" as *;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  &__logo {
+    width: 6rem;
+  }
+  &__list__link,
+  &__list {
+    display: flex;
+    display: none;
+  }
+  .btn {
+    display: none;
+  }
+  @include breakpoint(large) {
+    .navbar__burger {
+      display: none;
+    }
+    .navbar__list {
+      display: inline-block;
+      padding: 0 1.2rem;
+    }
+    .navbar__list--flex {
+      display: flex;
+    }
+    .btn {
+      display: inline-block;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@use "../abstracts/variables" as variables;
+@use "../abstracts/mixins" as mixins;
+
+//Hero Section
+.header {
+  background-image: url(../../images/bg-pattern-intro.svg),
+    linear-gradient(var(--gradient-orange-red));
+  background-size: 280%;
+  background-position: left 36% top 42%;
+  color: var(--white);
+  overflow: hidden;
+  border-bottom-left-radius: 4rem;
+  text-align: center;
+}
+
+//Banner Section
+.banner {
+  display: block;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
