@@ -1,8 +1,6 @@
 # Git Ignore Files
 
 # Avoid Accidental Uploads
-.DS_Store/
-.prettierignore/
 node_modules/
 Design/
 
