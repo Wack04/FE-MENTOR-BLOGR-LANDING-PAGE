@@ -1,4 +1,5 @@
 @use "../abstracts/utilities";
+@use "../Abstracts/mixins" as *;
 
 //Features Sections
 .features {
@@ -6,7 +7,10 @@
 
   //Feature Images
   &__image {
-    max-width: 90%;
+    max-width: 28rem;
+    @include breakpoint(medium) {
+      max-width: 44rem;
+    }
   }
 
   // Features Unique Black Background
@@ -24,11 +28,20 @@
     padding-top: 10rem;
   }
 
-  //Features Black Background Absolute Image
+  //Features Unique Black Absolute Position
   &__image--absolute {
     position: absolute;
-    top: -20rem;
+    top: -18rem;
+    right: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%);
+  }
+
+  //Features Unique Black Media Query
+  @include breakpoint(medium) {
+    &__image--absolute {
+      left: 30%;
+      top: -8rem;
+    }
   }
 }

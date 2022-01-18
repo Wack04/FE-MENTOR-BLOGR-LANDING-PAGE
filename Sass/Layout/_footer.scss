@@ -12,9 +12,10 @@
     margin-bottom: 2rem;
   }
   &__list__container {
-    @include breakpoint(large) {
+    @include breakpoint(medium) {
       display: flex;
       justify-content: space-between;
+      align-items: center;
     }
   }
   &__list__link {

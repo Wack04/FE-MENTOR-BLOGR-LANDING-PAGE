@@ -40,3 +40,44 @@ if (Hour >= 6 && Hour < 12) {
 } else {
   console.log("Good Evening");
 }
+
+// 17-01-2022
+let role = "Holla Bitches";
+switch (role) {
+  case "guest":
+    console.log("Guest User");
+    break;
+  case "moderator":
+    console.log("Moderator User");
+    break;
+  case "admin":
+    console.log("Admin User");
+    break;
+  default:
+    console.log("Unknown User");
+}
+
+//For LOOP
+for (let i = 1; i <= 5; i++) {
+  console.log("Hello World", i);
+}
+
+//While LOOP
+let i = 1;
+while (i <= 5) {
+  console.log("Hello World", i);
+  i++;
+}
+
+//Do While Loop
+let j = 9;
+do {
+  console.log("Hello World", j);
+  j++;
+} while (j <= 5);
+
+//For in Loop
+favouriteBook={
+  "Book: Six of Crows"
+}
+for ()

@@ -1,0 +1,15 @@
+@use "../Abstracts/mixins" as *;
+
+@include breakpoint(medium) {
+  .flex-1-of-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    h2,
+    h3,
+    p {
+      text-align: left;
+    }
+  }
+}

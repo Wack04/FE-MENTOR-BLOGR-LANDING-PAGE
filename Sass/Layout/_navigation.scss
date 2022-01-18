@@ -15,7 +15,7 @@
   .btn {
     display: none;
   }
-  @include breakpoint(large) {
+  @include breakpoint(medium) {
     .navbar__burger {
       display: none;
     }
