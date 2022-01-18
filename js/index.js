@@ -77,7 +77,59 @@ do {
 } while (j <= 5);
 
 //For in Loop
-favouriteBook={
-  "Book: Six of Crows"
+
+//Object Entries
+//Objects Having Key Value Pairs
+favouriteBook = {
+  Book: "Six of Crows",
+  Author: "William Nova",
+  Pages: 268,
+};
+for (key in favouriteBook) {
+  console.log(key, favouriteBook[key]);
 }
-for ()
+
+favouriteBooks = [
+  "Six of Crows",
+  "Vally of Fear",
+  "Sign of Four",
+  "Hound of Bakerville",
+];
+for (key in favouriteBooks) {
+  console.log(key, favouriteBooks[key]);
+}
+
+//For in Loop is Used to acces Key Value Pairs
+
+//For of
+colours = ["Red", "Blue", "Green", "Yellow", "Orange", "Purple"];
+for (colour of colours) {
+  console.log(colour);
+}
+
+//Break and Continue
+//Using Continue is Depricated and is Not recomended for writing programms
+h = 1;
+while (h <= 10) {
+  if (h % 2 == 0) {
+    h++;
+    continue;
+  }
+  console.log(h);
+  h++;
+}
+
+//Function for maximum of Two Number using If else Note:Else is not Necessary if There is Only Two
+function numberMaximum(firstNumber, secondNumber) {
+  if (firstNumber > secondNumber) return firstNumber;
+  else return secondNumber;
+}
+numberGiven = numberMaximum(60, 100);
+console.log("The Maximum of the Two is", numberGiven);
+
+//Function for Minimum of Two Numbers using Ternary Operator
+function numberMinimum(firstNumber, secondNumber) {
+  return firstNumber < secondNumber ? firstNumber : secondNumber;
+}
+secondNumberGiven = numberMinimum(40, 20);
+console.log("The Minimum of the Two is", secondNumberGiven);
