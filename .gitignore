@@ -1,12 +1,8 @@
 # Git Ignore Files
 
-# Avoid your project being littered with annoying .DS_Store files!
-.DS_Store
-.prettierignore
-
-# Avoid Accidental Upload of Node Modules
+# Avoid Accidental Uploads
+.DS_Store/
+.prettierignore/
 node_modules/
-
-#Avoid Accidental Upload of Design Files
 Design/
 
