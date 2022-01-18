@@ -7,3 +7,6 @@
 # Avoid Accidental Upload of Node Modules
 *node_modules
 
+#Avoid Accidental Upload of Design Files
+*Design
+
